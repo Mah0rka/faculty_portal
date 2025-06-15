@@ -1,10 +1,15 @@
 const { Sequelize } = require('sequelize');
 require('dotenv').config();
 
-// Ініціалізація підключення до бази даних PostgreSQL через Sequelize
 const sequelize = new Sequelize(process.env.DATABASE_URL, {
-  dialect: 'postgres',  
-  logging: false,       
+  dialect: 'postgres',
+  logging: false,
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false,
+    }
+  }
 });
 
-module.exports = sequelize; 
+module.exports = sequelize;
