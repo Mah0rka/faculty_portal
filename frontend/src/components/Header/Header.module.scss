@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+
+.navbar {
+  background-color: $dark-bg ;
+  padding: 10px 0; // Адаптивні відступи
+  border-radius:  35% 20% / 10% 25% ; // Закруглені кути
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 2vw, 15px); // Адаптивний відступ між логотипом і текстом
+  text-decoration: none;
+  color: rgb(223, 223, 223);
+}
+
+.logo {
+  height: clamp(40px, 8vw, 80px); // Адаптивна висота логотипу
+  width: auto; // Зберігає пропорції
+  object-fit: contain; // Запобігає деформації
+}
+
+.siteTitle {
+  font-weight: 600;
+}
+
+.navLink {
+  transition: color 0.3s ease;
+  &:hover {
+    color: $primary !important;
+  }
+}

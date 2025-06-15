@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.carousel {
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.image_url {
+  object-fit: contain;
+  height: 500px; // синхронізовано з .carousel
+  display: block;
+  margin: 0 auto; // центрує горизонтально
+}
