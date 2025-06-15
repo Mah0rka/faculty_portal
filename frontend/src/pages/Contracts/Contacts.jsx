@@ -16,7 +16,7 @@ function Contacts() {
       <h2 className={`${styles.title} fs-3 fs-md-2`}>Контакти</h2>
       <p className={`${styles.contactText} fs-5 fs-md-4`}>Email: it.faculty@ukrnet.com</p>
       <p className={`${styles.contactText} fs-5 fs-md-4`}>Телефон: +380 998 722 221</p>
-      <p className={`${styles.contactText} fs-5 fs-md-4`}>Адреса: +380 998 722 221</p>
+      <p className={`${styles.contactText} fs-5 fs-md-4`}>Адреса: Національний університет «Полтавська політехніка імені Юрія Кондратюка»</p>
     </Container>
   );
 }
