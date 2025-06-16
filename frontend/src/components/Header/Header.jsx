@@ -14,10 +14,12 @@ function Header() {
         {/* Логотип з назвою сайту, клікабельний і веде на головну сторінку */}
         <Navbar.Brand as={Link} to="/" className={styles.brand}>
           <img src="/images/logo.png" alt="Logo" className={styles.logo} />
-          <span className={`${styles.siteTitle} fs-6 fs-md-4`}>Факультет інформаційних технологій</span>
+          <span className={`${styles.siteTitle} fs-6 fs-md-4`}>Факультет<br/>інформаційних технологій</span>
         </Navbar.Brand>
+        
         {/* Кнопка для розгортання меню на мобільних пристроях */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
         {/* Основне меню навігації */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
