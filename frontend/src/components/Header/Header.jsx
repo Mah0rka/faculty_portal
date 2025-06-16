@@ -4,10 +4,10 @@ import styles from './Header.module.scss';
 
 function Header() {
   return (
-    <Navbar 
-      variant="dark" 
-      expand="lg" 
-      sticky="top" 
+    <Navbar
+      variant="dark"
+      expand="lg"
+      sticky="top"
       className={styles.navbar} // кастомні стилі для navbar
     >
       <Container>
@@ -16,10 +16,8 @@ function Header() {
           <img src="/images/logo.png" alt="Logo" className={styles.logo} />
           <span className={`${styles.siteTitle} fs-6 fs-md-4`}>Факультет інформаційних технологій</span>
         </Navbar.Brand>
-
         {/* Кнопка для розгортання меню на мобільних пристроях */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
         {/* Основне меню навігації */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">

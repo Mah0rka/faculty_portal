@@ -10,8 +10,8 @@
 }
 
 .image_url {
-  object-fit: contain;
-  height: 500px; // синхронізовано з .carousel
+  //object-fit: cover;
+  max-height: 500px; // синхронізовано з .carousel
   display: block;
   margin: 0 auto; // центрує горизонтально
 }

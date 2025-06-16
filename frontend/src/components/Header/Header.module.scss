@@ -3,7 +3,9 @@
 .navbar {
   background-color: $dark-bg ;
   padding: 10px 0; // Адаптивні відступи
-  border-radius:  35% 20% / 10% 25% ; // Закруглені кути
+  border-radius: 35% 20% / 10% 25%; // Закруглені кути
+  display: flex;
+  justify-content: space-between;
 }
 
 .brand {
@@ -26,6 +28,7 @@
 
 .navLink {
   transition: color 0.3s ease;
+
   &:hover {
     color: $primary !important;
   }
